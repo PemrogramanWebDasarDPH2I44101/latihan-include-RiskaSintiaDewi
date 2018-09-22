@@ -5,8 +5,7 @@ include('header.php');
 session_start();
 $_SESSION['nama'] = isset($_POST["nama"]) ? $_POST["nama"]:$_POST["nama"];//bisa muncul ketika tidak mengisi di halaman form
 $_SESSION['akses'] = isset($_POST["akses"]) ? $_POST["akses"]:$_POST["akses"];//bisa muncul ketika tidak mengisi di halaman form
-// $_SESSION['nama'] = $_POST["nama"];//hanya muncul ketika memasukan data di form
-// $_SESSION['akses'] = $_POST["akses"];//hanya muncul ketika memasukan dta di form
+
 setcookie("user", "budi", time() + 10, "/");
 if ($_POST) {
 	$hour = time() + 3600 * 24 *30;
